@@ -1,0 +1,3 @@
+---
+hostsfile_hosts: "{{ groups['all'] }}"
+hostsfile_int_hosts: "{{ groups['all'] }}"
