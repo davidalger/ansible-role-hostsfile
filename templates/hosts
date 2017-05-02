@@ -9,5 +9,5 @@
 {% endfor %}
 
 {% if hostsfile_int_interface %}{% for item in hostsfile_int_hosts %}
-{{ hostvars[item]['{{ hostsfile_int_interface }}']['ipv4']['address'] }} {{ hostvars[item]['ansible_hostname'] }}-int
+{{ hostvars[item][hostvars[item]['hostsfile_int_interface']]['ipv4']['address'] }} {{ hostvars[item]['ansible_hostname'] }}-int
 {% endfor %}{% endif %}
