@@ -11,3 +11,6 @@
 {% if hostsfile_int_interface %}{% for item in hostsfile_int_hosts %}
 {{ hostvars[item][hostvars[item]['hostsfile_int_interface']]['ipv4']['address'] }} {{ hostvars[item]['ansible_hostname'] }}-int
 {% endfor %}{% endif %}
+{% for item in hostsfile_records %}
+{{ item }}
+{% endfor %}
