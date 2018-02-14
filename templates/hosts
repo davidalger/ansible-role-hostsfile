@@ -5,7 +5,7 @@
 ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
 
 {% for item in hostsfile_hosts %}
-{{ hostvars[item]['ansible_default_ipv4']['address'] }} {{ hostvars[item]['ansible_fqdn'] }} {{ hostvars[item]['ansible_hostname'] }}
+{{ hostvars[item]['ansible_default_ipv4']['address'] }} {{ hostvars[item]['ansible_nodename'] }} {{ hostvars[item]['ansible_hostname'] }}
 {% endfor %}
 
 {% if hostsfile_int_interface %}{% for item in hostsfile_int_hosts %}
