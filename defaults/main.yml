@@ -11,3 +11,6 @@ hostsfile_int_interface:
 
 # List of additional entries to be appended to the hosts file
 hostsfile_records: []
+
+# Path to /etc/hosts (this is used on Travis to allow writing the file)
+hostsfile_path: /etc/hosts
